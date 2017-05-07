@@ -1,15 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
 namespace POS_aplicacao.Models
 {
+    // vai representar os dados da tabela dos CLIENTES
+
+    // criar o construtor desta classe
     public class Clientes
     {
-        public int Id { get; set; }
+        [Key]//indica que o atributo e uma PK
+        [Display(Name = "Cliente ID")]
+        public int ClienteID { get; set; }
 
-        [Required]
-        public string Name { get; set; }
+        [Display(Name = "Nome do Dono")]
+        public string Nome { set; get; }
+
+        [Display(Name = "Num. de Contribuinte")]
+        public string NIF { get; set; }
+
+        [Display(Name = "Contacto")]
+        public string Telemovel { get; set; }
+
+        [Display(Name = "Email")]
+        public string Email { get; set; }
     }
 }
