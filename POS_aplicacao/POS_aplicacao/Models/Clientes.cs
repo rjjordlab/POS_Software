@@ -19,13 +19,16 @@ namespace POS_aplicacao.Models
         [Display(Name = "Nome do Dono")]
         public string Nome { set; get; }
 
-        [Display(Name = "Num. de Contribuinte")]
+        [Display(Name = "N. Contribuinte")]
         public string NIF { get; set; }
 
-        [Display(Name = "Contacto")]
-        public string Telemovel { get; set; }
+        [Display(Name = "Telefone")]
+        public string Telefone { get; set; }
 
         [Display(Name = "Email")]
         public string Email { get; set; }
+
+        [Display(Name = "Morada")]
+        public string Morada { get; set; }
     }
 }
