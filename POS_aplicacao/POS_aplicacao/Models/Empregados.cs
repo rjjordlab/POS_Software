@@ -12,10 +12,10 @@ namespace POS_aplicacao.Models
     public class Empregados
     {
         [Key]//indica que o atributo e uma PK
-        [Display(Name = "Cliente ID")]
-        public int ClienteID { get; set; }
+        [Display(Name = "Empregado ID")]
+        public int EmpregadoID { get; set; }
 
-        [Display(Name = "Nome do Dono")]
+        [Display(Name = "Nome")]
         public string Nome { set; get; }
 
         [Display(Name = "N. Contribuinte")]
