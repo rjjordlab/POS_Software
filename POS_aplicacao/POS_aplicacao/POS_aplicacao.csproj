@@ -156,6 +156,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705080329117_InitialCreate.cs" />
+    <Compile Include="Migrations\201705080329117_InitialCreate.Designer.cs">
+      <DependentUpon>201705080329117_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\PosAppDB.cs" />
     <Compile Include="Models\Vendas.cs" />
     <Compile Include="Models\Produtos.cs" />
@@ -244,6 +249,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201705080329117_InitialCreate.resx">
+      <DependentUpon>201705080329117_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
