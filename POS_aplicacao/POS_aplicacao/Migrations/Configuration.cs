@@ -12,7 +12,6 @@ namespace POS_aplicacao.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
-           // ContextKey = "POS_aplicacao.Models.PosAppDB";
         }
 
         protected override void Seed(POS_aplicacao.Models.PosAppDB context)
