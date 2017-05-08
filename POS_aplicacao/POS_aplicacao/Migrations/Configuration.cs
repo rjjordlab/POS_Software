@@ -12,6 +12,7 @@ namespace POS_aplicacao.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+            ContextKey = "POS_aplicacao.Models.PosAppDB";
         }
 
         protected override void Seed(POS_aplicacao.Models.PosAppDB context)
@@ -26,7 +27,7 @@ namespace POS_aplicacao.Migrations
 
             // ############################################################################################
             // adiciona Clientes
-            var Clientes = new List<Clientes> {
+            var clientes = new List<Clientes> {
                new Clientes  {ClienteID=1,  Nome = "Luís Freitas",     NIF = "813635582", Telefone = "916932253", Email = "marin.petkov2@hotmail.com",   Morada = "Rua do Arsenal" },
                new Clientes  {ClienteID=2,  Nome = "Andreia Gomes",    NIF = "854613462", Telefone = "914881298", Email = "Kenny.dang303@gmail.com",     Morada = "Rua Nova do Almada" },
                new Clientes  {ClienteID=3,  Nome = "Cristina Sousa",   NIF = "265368715", Telefone = "916913918", Email = "symsy92@yahoo.com",           Morada = "Rua Júlio César Machado" },
@@ -45,11 +46,11 @@ namespace POS_aplicacao.Migrations
                new Clientes  {ClienteID=16, Nome = "Júlio Morais",     NIF = "266563928", Telefone = "914198687", Email = "andrey_unikool@yahoo.com",    Morada = "Rua do Comércio" }
             };
 
-            Clientes.ForEach(cc => context.Clientes.AddOrUpdate(c => c.Nome,cc));
+            clientes.ForEach(cc => context.Clientes.AddOrUpdate(c => c.Nome, cc));
             context.SaveChanges();
             // ############################################################################################
             // adiciona Empregados
-            var Empregados = new List<Empregados> {
+            var empregados = new List<Empregados> {
                new Empregados  {EmpregadoID=1, Nome = "Administrador",   NIF ="999999999", Telefone = "917254187", Email = "gestorsoftware@gmail.com", Morada = "Indisponivel" },
                new Empregados  {EmpregadoID=2, Nome = "Augusto Rosa",    NIF ="485162005", Telefone = "919367708", Email = "stefanleo@gmail.com",      Morada = "Rua do Breiner" },
                new Empregados  {EmpregadoID=3, Nome = "Cristina Melo",   NIF ="416933279", Telefone = "910721924", Email = "sydney7a@gmail.com",       Morada = "Rua de Santa Catarina" },
@@ -57,11 +58,11 @@ namespace POS_aplicacao.Migrations
                new Empregados  {EmpregadoID=5, Nome = "Carmem Oliveira", NIF ="717250604", Telefone = "913349749", Email = "santosn35@aol.com",        Morada = "Rua do Comércio" }
             };
 
-            Empregados.ForEach(ee => context.Empregados.AddOrUpdate(e => e.Nome,ee));
+            empregados.ForEach(ee => context.Empregados.AddOrUpdate(e => e.Nome, ee));
             context.SaveChanges();
             // ############################################################################################
             // adiciona Fornecedores
-            var Fornecedores = new List<Fornecedores> {
+            var fornecedores = new List<Fornecedores> {
                new Fornecedores  {FornecedorID=1, Nome = "PTRobotics",             EIN ="45-1536581", Telefone = "910400147", Email = "ptr@gmail.com",                Morada = "Rua Brigadeiro Lino Dias Valente" },
                new Fornecedores  {FornecedorID=2, Nome = "Mouser Electronics",     EIN ="61-1520598", Telefone = "915511027", Email = "meinc@hotmail.com",            Morada = "Rua do Moderno" },
                new Fornecedores  {FornecedorID=3, Nome = "castro ELETRONICA",      EIN ="26-2368715", Telefone = "915765786", Email = "castelet@iol.pt",              Morada = "Rua do Graínho" },
@@ -70,11 +71,11 @@ namespace POS_aplicacao.Migrations
                new Fornecedores  {FornecedorID=6, Nome = "ELETRONICA EMBAJADORES", EIN ="88-1548541", Telefone = "910492386", Email = "eletroembajadores@clix.pt",    Morada = "Rua de Santa Catarina" }
             };
 
-            Fornecedores.ForEach(ff => context.Fornecedores.AddOrUpdate(f => f.Nome,ff));
+            fornecedores.ForEach(ff => context.Fornecedores.AddOrUpdate(f => f.Nome, ff));
             context.SaveChanges();
             // ############################################################################################
             // adiciona Produtos
-            var Produtos = new List<Produtos> {
+            var produtos = new List<Produtos> {
                new Produtos  {ProdutoID=1,  Nome = "74LS47",            Categoria ="74XX LOGIC ICS", Descrisao ="BCD To 7 Segment Decoder",                                   Preco ="1.20", FornecedorID =1},
                new Produtos  {ProdutoID=2,  Nome = "DM7407N",           Categoria ="74XX LOGIC ICS", Descrisao ="7407 HEX BUFFERS WITH HIGH VOLTAGE OPEN-COLLECTOR OUTPUTS",  Preco ="2.10", FornecedorID =3},
                new Produtos  {ProdutoID=3,  Nome = "74AC139PC",         Categoria ="74XX LOGIC ICS", Descrisao ="74AC139 DUAL 1-OF-4 DECODER/DEMULTIPLEXER",                  Preco ="1.49", FornecedorID =5},
@@ -88,15 +89,15 @@ namespace POS_aplicacao.Migrations
                new Produtos  {ProdutoID=11, Nome = "MM74HC165N",        Categoria ="74XX LOGIC ICS", Descrisao ="74HC165 PARALLEL-IN/SERIAL-OUT 8-BIT SHIFT REGISTER",        Preco ="3.10", FornecedorID =4}
             };
 
-            Produtos.ForEach(pp => context.Produtos.AddOrUpdate(p => p.Nome,pp));
+            produtos.ForEach(pp => context.Produtos.AddOrUpdate(p => p.Nome, pp));
             context.SaveChanges();
             // ############################################################################################
             // adiciona Vendas
-            var Vendas = new List<Vendas> {
+            var vendas = new List<Vendas> {
                new Vendas  {VendaID=1, EmpregadoID = 1, ClienteID = 1, ProdutoID = 2, Quantidade = 5, DataVenda ="15-02-2017" }
             };
 
-            Vendas.ForEach(vv => context.Vendas.Add(vv));
+            vendas.ForEach(vv => context.Vendas.Add(vv));
             context.SaveChanges();
         }
     }
