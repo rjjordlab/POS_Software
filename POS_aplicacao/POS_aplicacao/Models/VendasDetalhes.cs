@@ -25,6 +25,6 @@ namespace POS_aplicacao.Models
         public double Preco { set; get; }
 
         [Display(Name = "Total a pagar")] //total do preco * quantidade
-        public int TotalAPagar { set; get; }
+        public double TotalAPagar { set; get; }
     }
 }

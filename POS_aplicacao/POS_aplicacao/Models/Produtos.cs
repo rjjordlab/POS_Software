@@ -24,8 +24,11 @@ namespace POS_aplicacao.Models
         [Display(Name = "Descrisão")]
         public string Descrisao { get; set; }
 
+        [Display(Name = "Quantidade")]
+        public int Quantidade { get; set; }
+
         [Display(Name = "Preço")]
-        public string Preco { get; set; }
+        public double Preco { get; set; }
 
         [Display(Name = "Fornecedor ID")]
         public int FornecedorID { get; set; }

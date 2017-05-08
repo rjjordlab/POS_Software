@@ -15,19 +15,16 @@ namespace POS_aplicacao.Models
         [Display(Name = "Venda ID")]
         public int VendaID { get; set; }
 
-        [Display(Name = "Empregado ID")]
-        public int EmpregadoID { get; set; }
-
         [Display(Name = "Cliente ID")]
         public int ClienteID { get; set; }
 
-        [Display(Name = "Produto ID")]
-        public int ProdutoID { get; set; }
-
-        [Display(Name = "Quantidade")]
-        public int Quantidade { set; get; }
-
         [Display(Name = "Data de Venda")]
         public string DataVenda { get; set; }
+
+        [Display(Name = "Total Pago")]
+        public double TotalPago { get; set; }
+
+        [Display(Name = "Empregado ID")]
+        public int EmpregadoID { get; set; } //FK
     }
 }
