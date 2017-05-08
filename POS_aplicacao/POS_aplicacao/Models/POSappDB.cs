@@ -15,11 +15,11 @@ namespace POS_aplicacao.Models
         //identifica onde se encontra a database
 
         public PosAppDB() : base("POSappDBConnection") { }
-
         //descrever as tabelas que estao na database
-     //   public virtual DbSet<Donos> Donos { get; set; }
-      //  public virtual DbSet<Animais> Animais { get; set; }
-      //  public virtual DbSet<Veterinarios> Veterinarios { get; set; }
-       // public virtual DbSet<Consultas> Consultas { get; set; }
+        public virtual DbSet<Clientes> Clientes { get; set; }
+        public virtual DbSet<Empregados> Empregados { get; set; }
+        public virtual DbSet<Fornecedores> Fornecedores { get; set; }
+        public virtual DbSet<Produtos> Produtos { get; set; }
+        public virtual DbSet<Vendas> Vendas { get; set; }
     }
 }
