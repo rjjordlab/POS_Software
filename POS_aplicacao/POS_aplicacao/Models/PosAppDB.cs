@@ -21,5 +21,6 @@ namespace POS_aplicacao.Models
         public virtual DbSet<Fornecedores> Fornecedores { get; set; }
         public virtual DbSet<Produtos> Produtos { get; set; }
         public virtual DbSet<Vendas> Vendas { get; set; }
+
     }
 }
