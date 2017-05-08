@@ -157,12 +157,14 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\LoginAcesso.cs" />
     <Compile Include="Models\PosAppDB.cs" />
     <Compile Include="Models\Vendas.cs" />
     <Compile Include="Models\Produtos.cs" />
     <Compile Include="Models\Fornecedores.cs" />
     <Compile Include="Models\Clientes.cs" />
     <Compile Include="Models\Empregados.cs" />
+    <Compile Include="Models\VendasDetalhes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
