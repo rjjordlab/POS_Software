@@ -31,6 +31,6 @@ namespace POS_aplicacao.Models
         public double Preco { get; set; }
 
         [Display(Name = "Fornecedor ID")]
-        public int FornecedorID { get; set; }
+        public int FornecedorID { get; set; } //FK
     }
 }

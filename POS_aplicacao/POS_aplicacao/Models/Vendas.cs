@@ -16,7 +16,7 @@ namespace POS_aplicacao.Models
         public int VendaID { get; set; }
 
         [Display(Name = "Cliente ID")]
-        public int ClienteID { get; set; }
+        public int ClienteID { get; set; } //FK
 
         [Display(Name = "Data de Venda")]
         public string DataVenda { get; set; }
