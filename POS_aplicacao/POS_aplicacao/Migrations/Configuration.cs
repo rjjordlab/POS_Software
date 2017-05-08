@@ -11,7 +11,7 @@ namespace POS_aplicacao.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
             ContextKey = "POS_aplicacao.Models.PosAppDB";
         }
 
