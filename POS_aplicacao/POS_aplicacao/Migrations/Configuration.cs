@@ -11,7 +11,7 @@ namespace POS_aplicacao.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationsEnabled = false;
         }
 
         protected override void Seed(POS_aplicacao.Models.PosAppDB context)
@@ -96,7 +96,7 @@ namespace POS_aplicacao.Migrations
                new Vendas  {VendaID=1, EmpregadoID = 1, ClienteID = 1, ProdutoID = 2, Quantidade = 5, DataVenda ="15-02-2017" }
             };
 
-            Vendas.ForEach(vv => context.Vendas.AddOrUpdate(v => v.DataVenda,vv));
+            Vendas.ForEach(vv => context.Vendas.Add(vv));
             context.SaveChanges();
         }
     }
