@@ -25,7 +25,7 @@ namespace POS_aplicacao.Models
         public int ProdutoID { get; set; }
 
         [Display(Name = "Quantidade")]
-        public string Quantidade { set; get; }
+        public int Quantidade { set; get; }
 
         [Display(Name = "Data de Venda")]
         public string DataVenda { get; set; }
