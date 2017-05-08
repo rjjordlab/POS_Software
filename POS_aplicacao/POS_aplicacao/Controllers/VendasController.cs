@@ -46,7 +46,7 @@ namespace POS_aplicacao.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "VendaID,EmpregadoID,ClienteID,ProdutoID,Quantidade,DataVenda")] Vendas vendas)
+        public ActionResult Create([Bind(Include = "VendaID,ClienteID,DataVenda,TotalPago,EmpregadoID")] Vendas vendas)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace POS_aplicacao.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "VendaID,EmpregadoID,ClienteID,ProdutoID,Quantidade,DataVenda")] Vendas vendas)
+        public ActionResult Edit([Bind(Include = "VendaID,ClienteID,DataVenda,TotalPago,EmpregadoID")] Vendas vendas)
         {
             if (ModelState.IsValid)
             {

@@ -221,6 +221,11 @@
     <Content Include="Views\Fornecedores\Details.cshtml" />
     <Content Include="Views\Fornecedores\Edit.cshtml" />
     <Content Include="Views\Fornecedores\Index.cshtml" />
+    <Content Include="Views\LoginAcesso\Create.cshtml" />
+    <Content Include="Views\LoginAcesso\Delete.cshtml" />
+    <Content Include="Views\LoginAcesso\Details.cshtml" />
+    <Content Include="Views\LoginAcesso\Edit.cshtml" />
+    <Content Include="Views\LoginAcesso\Index.cshtml" />
     <Content Include="Views\Produtos\Create.cshtml" />
     <Content Include="Views\Produtos\Delete.cshtml" />
     <Content Include="Views\Produtos\Details.cshtml" />
@@ -236,11 +241,6 @@
     <Content Include="Views\VendasDetalhes\Details.cshtml" />
     <Content Include="Views\VendasDetalhes\Edit.cshtml" />
     <Content Include="Views\VendasDetalhes\Index.cshtml" />
-    <Content Include="Views\LoginAcesso\Create.cshtml" />
-    <Content Include="Views\LoginAcesso\Delete.cshtml" />
-    <Content Include="Views\LoginAcesso\Details.cshtml" />
-    <Content Include="Views\LoginAcesso\Edit.cshtml" />
-    <Content Include="Views\LoginAcesso\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

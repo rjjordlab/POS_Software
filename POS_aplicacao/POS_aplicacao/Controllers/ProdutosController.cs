@@ -46,7 +46,7 @@ namespace POS_aplicacao.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ProdutoID,Nome,Categoria,Descrisao,Preco,FornecedorID")] Produtos produtos)
+        public ActionResult Create([Bind(Include = "ProdutoID,Nome,Categoria,Descrisao,Quantidade,Preco,FornecedorID")] Produtos produtos)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace POS_aplicacao.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ProdutoID,Nome,Categoria,Descrisao,Preco,FornecedorID")] Produtos produtos)
+        public ActionResult Edit([Bind(Include = "ProdutoID,Nome,Categoria,Descrisao,Quantidade,Preco,FornecedorID")] Produtos produtos)
         {
             if (ModelState.IsValid)
             {
