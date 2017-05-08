@@ -5,8 +5,7 @@ using System.Web;
 
 namespace POS_aplicacao.Models
 {
-    public class POSappDB
+    public class PosAppDB
     {
-
     }
 }
