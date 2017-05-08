@@ -45,7 +45,7 @@ namespace POS_aplicacao.Migrations
                new Clientes  {ClienteID=16, Nome = "Júlio Morais",     NIF = "266563928", Telefone = "914198687", Email = "andrey_unikool@yahoo.com",    Morada = "Rua do Comércio" }
             };
 
-            Clientes.ForEach(dd => context.Clientes.AddOrUpdate(d => d.Nome,dd));
+            Clientes.ForEach(cc => context.Clientes.AddOrUpdate(c => c.Nome,cc));
             context.SaveChanges();
             // ############################################################################################
             // adiciona Empregados
@@ -57,7 +57,7 @@ namespace POS_aplicacao.Migrations
                new Empregados  {EmpregadoID=5, Nome = "Carmem Oliveira", NIF ="717250604", Telefone = "913349749", Email = "santosn35@aol.com",        Morada = "Rua do Comércio" }
             };
 
-            Empregados.ForEach(dd => context.Empregados.AddOrUpdate(d => d.Nome,dd));
+            Empregados.ForEach(ee => context.Empregados.AddOrUpdate(e => e.Nome,ee));
             context.SaveChanges();
             // ############################################################################################
             // adiciona Fornecedores
@@ -70,7 +70,7 @@ namespace POS_aplicacao.Migrations
                new Fornecedores  {FornecedorID=6, Nome = "ELETRONICA EMBAJADORES", EIN ="88-1548541", Telefone = "910492386", Email = "eletroembajadores@clix.pt",    Morada = "Rua de Santa Catarina" }
             };
 
-            Fornecedores.ForEach(dd => context.Fornecedores.AddOrUpdate(d => d.Nome,dd));
+            Fornecedores.ForEach(ff => context.Fornecedores.AddOrUpdate(f => f.Nome,ff));
             context.SaveChanges();
             // ############################################################################################
             // adiciona Produtos
@@ -88,7 +88,7 @@ namespace POS_aplicacao.Migrations
                new Produtos  {ProdutoID=11, Nome = "MM74HC165N",        Categoria ="74XX LOGIC ICS", Descrisao ="74HC165 PARALLEL-IN/SERIAL-OUT 8-BIT SHIFT REGISTER",        Preco ="3.10", FornecedorID =4}
             };
 
-            Produtos.ForEach(dd => context.Produtos.AddOrUpdate(d => d.Nome,dd));
+            Produtos.ForEach(pp => context.Produtos.AddOrUpdate(p => p.Nome,pp));
             context.SaveChanges();
             // ############################################################################################
             // adiciona Vendas
@@ -96,7 +96,7 @@ namespace POS_aplicacao.Migrations
                new Vendas  {VendaID=1, EmpregadoID = 1, ClienteID = 1, ProdutoID = 2, Quantidade = 5, DataVenda ="15-02-2017" }
             };
 
-            Vendas.ForEach(dd => context.Vendas.AddOrUpdate(d => d.Nome,dd));
+            Vendas.ForEach(vv => context.Vendas.AddOrUpdate(v => v.DataVenda,vv));
             context.SaveChanges();
         }
     }
