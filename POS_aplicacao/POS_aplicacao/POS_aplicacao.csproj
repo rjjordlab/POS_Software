@@ -151,8 +151,10 @@
     <Compile Include="Controllers\EmpregadosController.cs" />
     <Compile Include="Controllers\FornecedoresController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginAcessoController.cs" />
     <Compile Include="Controllers\ProdutosController.cs" />
     <Compile Include="Controllers\VendasController.cs" />
+    <Compile Include="Controllers\VendasDetalhesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -229,6 +231,16 @@
     <Content Include="Views\Vendas\Details.cshtml" />
     <Content Include="Views\Vendas\Edit.cshtml" />
     <Content Include="Views\Vendas\Index.cshtml" />
+    <Content Include="Views\VendasDetalhes\Create.cshtml" />
+    <Content Include="Views\VendasDetalhes\Delete.cshtml" />
+    <Content Include="Views\VendasDetalhes\Details.cshtml" />
+    <Content Include="Views\VendasDetalhes\Edit.cshtml" />
+    <Content Include="Views\VendasDetalhes\Index.cshtml" />
+    <Content Include="Views\LoginAcesso\Create.cshtml" />
+    <Content Include="Views\LoginAcesso\Delete.cshtml" />
+    <Content Include="Views\LoginAcesso\Details.cshtml" />
+    <Content Include="Views\LoginAcesso\Edit.cshtml" />
+    <Content Include="Views\LoginAcesso\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

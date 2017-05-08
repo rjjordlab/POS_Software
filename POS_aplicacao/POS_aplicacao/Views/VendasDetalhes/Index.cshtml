@@ -1,0 +1,57 @@
+﻿@model IEnumerable<POS_aplicacao.Models.VendasDetalhes>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.VendaID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProdutoID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Quantidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Preco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalAPagar)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.VendaID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProdutoID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Quantidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Preco)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalAPagar)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.DetalheID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.DetalheID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.DetalheID })
+        </td>
+    </tr>
+}
+
+</table>

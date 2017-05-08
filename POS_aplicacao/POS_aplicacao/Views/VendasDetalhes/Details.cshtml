@@ -1,0 +1,58 @@
+﻿@model POS_aplicacao.Models.VendasDetalhes
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>VendasDetalhes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VendaID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VendaID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProdutoID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProdutoID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Preco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Preco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalAPagar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalAPagar)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DetalheID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
