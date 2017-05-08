@@ -1,5 +1,5 @@
 # POS/Maquina Registadora de produtos eletrónicos
-- Use o branch "Projecto" para ver o estado actual do POS_Software
+- - Use o branch "Projecto" para ver o estado actual do POS_Software
 
 Descrição (sumária) da aplicação:
   - A aplicação é uma caixa registadora que regista a compra realizada pelo cliente e que imprime o recibo da compra, e atualiza a base de dados.
